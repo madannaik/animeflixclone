@@ -1,9 +1,12 @@
 import './App.css';
+import { Appbar } from './components/appbar';
+import { TopAnime } from './components/topanime';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <Appbar />
+      <TopAnime/>
     </div>
   );
 }
