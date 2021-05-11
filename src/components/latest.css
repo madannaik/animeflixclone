@@ -1,0 +1,222 @@
+div.column-item {
+	padding: 1.5em;
+    background-color: #111111;
+}
+div.column-item h2.title{
+	color: #fff;
+	text-align: start;
+	font-size: 1.5rem;
+	font-family: sans-serif;
+	line-height: 3;
+}
+div.column-item.border-bottom {
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #eee
+}
+
+div.card-title-limit p.title {
+	width: 166.5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+table.table-info {
+	width: 100%;
+	border: 0
+}
+
+table.table-info td,
+table.table-info th {
+	padding: .3em
+}
+
+table.table-info th {
+	color: #b9cad8
+}
+
+div.cards,
+div.episode-scroller {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-ms-flex-line-pack: justify;
+	align-content: space-between;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch
+}
+
+div.cards div.card-content,
+div.episode-scroller div.card-content {
+	padding: .5rem
+}
+
+div.cards div.card,
+div.episode-scroller div.card {
+	width: 19%;
+	margin-bottom: 1rem;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-color: transparent
+}
+
+div.cards div.card div.episode-meta,
+div.episode-scroller div.card div.episode-meta {
+	line-height: 1rem;
+	color: rgb(0, 119, 230);
+}
+
+div.cards div.card div.episode-meta span.episode-title,
+div.episode-scroller div.card div.episode-meta span.episode-title {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: 700;
+	font-size: 1rem;
+	color: #fff;
+}
+
+
+.has-text-danger{
+	color: red;
+	font-size: 0.9rem;
+
+}
+div.cards div.card div.episode-meta span.episode-num,
+div.episode-scroller div.card div.episode-meta span.episode-num {
+	display: block;
+	font-weight: 700;
+	font-size: .8rem;
+	color: #97b3c5
+}
+
+div.card a:hover p.title {
+	text-decoration: none;
+	color: #000
+}
+
+div.card a:hover small {
+	text-decoration: none
+}
+
+ul.search-results li {
+	margin: 2rem
+}
+
+li.now-playing {
+	background: #f1f1f1
+}
+
+
+div.card-image{
+
+}
+
+@media screen and (max-width:1087px) {
+	div.episode-scroller {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch
+	}
+	div.episode-scroller div.card {
+		margin: .5rem;
+		width: 40%
+	}
+	.hero.is-black div.hero-body {
+		padding: 1rem!important
+	}
+}
+
+@media screen and (max-width:500px) {
+	div.episode-scroller {
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch
+	}
+	div.episode-scroller div.card {
+		width: 70%
+	}
+	div.cards {
+		-ms-flex-line-pack: center;
+		align-content: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center
+	}
+	div.cards div.card {
+		width: 100%
+	}
+}
+
+div.scroller {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+div.scroller div.card {
+	border-radius: .5em
+}
+
+@media screen and (max-width:1279px) {
+	div.scroller {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch
+	}
+	div.scroller div.anime-box,
+	div.scroller div.card {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+		width: 30%;
+		margin-bottom: 2rem
+	}
+}
+
+@media screen and (max-width:600px) {
+	div.scroller {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		overflow-x: auto
+	}
+	div.scroller div.anime-box,
+	div.scroller div.card {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+		width: 80%;
+		margin-right: 2rem;
+		border-radius: .5em;
+		margin-bottom: 2rem
+	}
+}
+
+@media screen and (max-width:769px) {
+	div.card-title-limit p.title {
+		width: auto;
+		white-space: normal;
+		overflow: visible;
+		text-overflow: clip
+	}
+}

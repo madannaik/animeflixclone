@@ -5,13 +5,16 @@ const postapp = express.Router();
 postapp.use(express.urlencoded({ extended: true }));
 postapp.get("/", (req, res) => res.send({ status: 'ok' }));
 postapp.post("/", async (req, res) => {
-    const url = 'https://www1.gogoanime.ai/';
-    axios.get(url).
-    then(response=>{
-        console.log(response.data);
+    const url = 'https://ww1.animesimple.com/';
+    axios.get(url).then(response=>{
         let url = gethtmldata(response.data);
-        console.log(url);
-        res.send(response.data);
+        console.log("data sent");
+        res.send(url);
+        console.log({
+            ip:req.url,
+            url:req.hostname,
+            data:url.length,
+        });
     }).catch(err=>{
         console.log(err);
     })
