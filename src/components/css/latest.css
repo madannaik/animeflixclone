@@ -21,19 +21,19 @@ div.card-title-limit p.title {
 	text-overflow: ellipsis
 }
 
-table.table-info {
-	width: 100%;
-	border: 0
-}
+/*table.table-info {*/
+/*	width: 100%;*/
+/*	border: 0*/
+/*}*/
 
-table.table-info td,
-table.table-info th {
-	padding: .3em
-}
+/*table.table-info td,*/
+/*table.table-info th {*/
+/*	padding: .3em*/
+/*}*/
 
-table.table-info th {
-	color: #b9cad8
-}
+/*table.table-info th {*/
+/*	color: #b9cad8*/
+/*}*/
 
 div.cards,
 div.episode-scroller {
@@ -114,14 +114,9 @@ ul.search-results li {
 	margin: 2rem
 }
 
-li.now-playing {
-	background: #f1f1f1
-}
 
 
-div.card-image{
 
-}
 
 @media screen and (max-width:1087px) {
 	div.episode-scroller {
@@ -219,4 +214,7 @@ div.scroller div.card {
 		overflow: visible;
 		text-overflow: clip
 	}
+}
+@media screen and (min-width:300px)and  (max-width: 700px) {
+
 }
