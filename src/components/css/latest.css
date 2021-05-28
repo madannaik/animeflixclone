@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
 div.column-item {
 	padding: 1.5em;
     background-color: #111111;
@@ -6,7 +8,8 @@ div.column-item h2.title{
 	color: #fff;
 	text-align: start;
 	font-size: 1.5rem;
-	font-family: sans-serif;
+	font-weight: bold;
+	font-family: 'Mukta', sans-serif;
 	line-height: 3;
 }
 div.column-item.border-bottom {
@@ -61,6 +64,7 @@ div.episode-scroller div.card-content {
 div.cards div.card,
 div.episode-scroller div.card {
 	width: 19%;
+
 	margin-bottom: 1rem;
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 auto;
@@ -118,22 +122,50 @@ ul.search-results li {
 
 
 
-@media screen and (max-width:1087px) {
-	div.episode-scroller {
-		-ms-flex-wrap: nowrap;
-		flex-wrap: nowrap;
-		overflow-x: scroll;
-		-webkit-overflow-scrolling: touch
-	}
-	div.episode-scroller div.card {
-		margin: .5rem;
-		width: 40%
-	}
-	.hero.is-black div.hero-body {
-		padding: 1rem!important
-	}
+
+
+
+div.scroller {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
 }
 
+div.scroller div.card {
+	border-radius: .5em
+}
+
+
+.latest-anime-div h1{
+	color: white;
+	text-align: left;
+	font-family: 'Mukta', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.latest-anime-cards{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.latest-anime-div .latest-cards{
+	margin: 1vh 1vw;
+}
+.latest-anime-cards figure{
+	width: 28vh;
+	border: 4px solid grey;
+
+}
+
+.latest-anime-cards figure img{
+	width: 28vh;
+}
+.latest-anime-cards figure figcaption{
+	color: white;
+	font-family: 'Odibee Sans', cursive;
+}
 @media screen and (max-width:500px) {
 	div.episode-scroller {
 		overflow-x: scroll;
@@ -151,38 +183,6 @@ ul.search-results li {
 	}
 	div.cards div.card {
 		width: 100%
-	}
-}
-
-div.scroller {
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex
-}
-
-div.scroller div.card {
-	border-radius: .5em
-}
-
-@media screen and (max-width:1279px) {
-	div.scroller {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-wrap: nowrap;
-		flex-wrap: nowrap;
-		overflow-x: scroll;
-		-webkit-overflow-scrolling: touch
-	}
-	div.scroller div.anime-box,
-	div.scroller div.card {
-		-webkit-box-flex: 0;
-		-ms-flex: 0 0 auto;
-		flex: 0 0 auto;
-		width: 30%;
-		margin-bottom: 2rem
 	}
 }
 
@@ -205,8 +205,9 @@ div.scroller div.card {
 		border-radius: .5em;
 		margin-bottom: 2rem
 	}
-}
 
+
+}
 @media screen and (max-width:769px) {
 	div.card-title-limit p.title {
 		width: auto;
@@ -215,6 +216,54 @@ div.scroller div.card {
 		text-overflow: clip
 	}
 }
-@media screen and (min-width:300px)and  (max-width: 700px) {
+@media screen and (max-width:1087px) {
+	div.episode-scroller {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch
+	}
+	div.episode-scroller div.card {
+		margin: .5rem;
+		width: 40%
+	}
+	.hero.is-black div.hero-body {
+		padding: 1rem!important
+	}
+	.latest-anime-cards{
+		justify-content: center;
+		align-items: center;
+	}
+	.latest-anime-cards figure{
+		width: 25vh;
 
+	}
+
+	.latest-anime-cards figure img{
+		width: 25vh;
+	}
 }
+@media screen and (max-width:1279px) {
+	div.scroller {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch
+	}
+	div.scroller div.anime-box,
+	div.scroller div.card {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+		width: 30%;
+		margin-bottom: 2rem
+	}
+}
+
+
+
+
+

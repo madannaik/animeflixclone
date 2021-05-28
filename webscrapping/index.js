@@ -8,7 +8,9 @@ const app = express();
 // Configure the app port
 const port = process.env.PORT || 5000;
 app.set('port', port);
-app.use(cors())
+app.use(cors({
+    origin:false,
+}))
 // Load middlewares
 app.use(logger('dev'));
 app.use("/",postapp);

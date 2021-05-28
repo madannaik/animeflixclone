@@ -4,7 +4,9 @@ import { TopAnime } from './components/topanime';
 
 function App() {
   return (
+
     <div className="App">
+
       <Appbar />
       <TopAnime/>
     </div>

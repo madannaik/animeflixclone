@@ -1,12 +1,15 @@
-import "./latest.css";
+import "./css/latest.css";
 import { React, useEffect, useState } from "react";
 import { Spinner } from "@chakra-ui/spinner";
-//"https://cdn.animeultima.tv/episode-photo/786e9b14-7ea2-4d70-aca3-1dc6dc5bd6b8_medium.jpg 416w, https://cdn.animeultima.tv/episode-photo/786e9b14-7ea2-4d70-aca3-1dc6dc5bd6b8_small.jpg 316w, https://cdn.animeultima.tv/episode-photo/786e9b14-7ea2-4d70-aca3-1dc6dc5bd6b8_xs.jpg 255w" sizes="(max-width: 1087px) 416px, (max-width: 500px) 316px, 255px"
+import {fetchDetails} from "../API/api";
+
 export const TopAnime = () => {
     const [isdata, setisdata] = useState([]);
     const [isloading, setisloading] = useState(true);
     useEffect(() => {
-        fetch('http://localhost:5000/',
+        const details = fetchDetails();
+        console.log(details);
+        fetch('http://127.0.0.1:5000/',
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -55,6 +58,54 @@ export const TopAnime = () => {
                 </div>
             })}
 
+        </div>
+        <div className="latest-anime-div">
+            <h1>Top 24 Hrs</h1>
+            <div className="latest-anime-cards">
+                <div className="latest-cards">
+                    <figure>
+                        <img src="https://cdn.myanimelist.net/images/anime/1134/111757.jpg" alt=""/>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                </div>
+                <div className="latest-cards">
+                    <figure>
+                        <img src="https://cdn.myanimelist.net/images/anime/1134/111757.jpg" alt=""/>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                </div>
+                <div className="latest-cards">
+                    <figure>
+                        <img src="https://cdn.myanimelist.net/images/anime/1134/111757.jpg" alt=""/>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                </div>
+                <div className="latest-cards">
+                    <figure>
+                        <img src="https://cdn.myanimelist.net/images/anime/1134/111757.jpg" alt=""/>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                </div>
+                <div className="latest-cards">
+                    <figure>
+                        <img src="https://cdn.myanimelist.net/images/anime/1134/111757.jpg" alt=""/>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                </div>
+                <div className="latest-cards">
+                    <figure>
+                        <img src="https://cdn.myanimelist.net/images/anime/1134/111757.jpg" alt=""/>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                </div>
+                <div className="latest-cards">
+                    <figure>
+                        <img src="https://cdn.myanimelist.net/images/anime/1134/111757.jpg" alt=""/>
+                        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    </figure>
+                </div>
+
+            </div>
         </div>
     </div>
 }
