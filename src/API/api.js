@@ -1,20 +1,24 @@
-export const fetchDetails = ()=>{
+import axios from "axios";
+export const fetchDetails = async ()=>{
     const date = new Date();
-
     const day = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
-
-    fetch(`https://api.jikan.moe/v3/schedule/${day[date.getDay()]}`,
-        {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-        }
-    )
-        .then(response => response.json())
-        .then(data => {
-            return data[day[date.getDay()]];
+    let url = `https://api.jikan.moe/v3/schedule/${day[date.getDay()]}`;
+    
+    let datast = [];
+// Make a request for a user with a given ID
+   await axios.get(url)
+        .then(function (response) {
+            // handle success
+            
+            datast = response.data[day[date.getDay()]];
+            console.log(datast);
         })
-        .catch(err => {
-            console.log(err);
+        .catch(function (error) {
+            // handle error
+            console.log(error);
         })
-    return 0;
+        .then(function () {
+            // always executed
+        });
+        return datast;
 }
