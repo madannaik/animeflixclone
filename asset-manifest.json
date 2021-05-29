@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/animeflixclone/static/css/main.87795308.chunk.css",
+    "main.js": "/animeflixclone/static/js/main.16213300.chunk.js",
+    "main.js.map": "/animeflixclone/static/js/main.16213300.chunk.js.map",
+    "runtime-main.js": "/animeflixclone/static/js/runtime-main.b7b5b6fd.js",
+    "runtime-main.js.map": "/animeflixclone/static/js/runtime-main.b7b5b6fd.js.map",
+    "static/js/2.832635b5.chunk.js": "/animeflixclone/static/js/2.832635b5.chunk.js",
+    "static/js/2.832635b5.chunk.js.map": "/animeflixclone/static/js/2.832635b5.chunk.js.map",
+    "index.html": "/animeflixclone/index.html",
+    "static/css/main.87795308.chunk.css.map": "/animeflixclone/static/css/main.87795308.chunk.css.map",
+    "static/js/2.832635b5.chunk.js.LICENSE.txt": "/animeflixclone/static/js/2.832635b5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7b5b6fd.js",
+    "static/js/2.832635b5.chunk.js",
+    "static/css/main.87795308.chunk.css",
+    "static/js/main.16213300.chunk.js"
+  ]
+}
