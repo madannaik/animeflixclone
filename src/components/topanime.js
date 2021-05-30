@@ -1,5 +1,5 @@
 import "./css/latest.css";
-import { React, useEffect, useState } from "react";
+import {  React, useEffect, useState } from "react";
 import { Spinner } from "@chakra-ui/spinner";
 import {fetchDetails} from "../API/api";
 import { graph } from "../API/graph";
@@ -9,7 +9,7 @@ export const TopAnime = () => {
     const [isdata, setisdata] = useState([]);
     const [isloading, setisloading] = useState(true);
     const [topAnime,setTopAnime] = useState([]);
-
+    
 
     useEffect(() => {
 
@@ -24,22 +24,7 @@ export const TopAnime = () => {
         
      
 
-        // fetch('http://127.0.0.1:5000',
-        //     {
-        //         method: 'POST',
-    
-        //         headers: { 'Content-Type': 'application/json' },
-        //     }
-        // )
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         // console.log(data);
-        //         setisloading(false);
-        //         setisdata(data);
-        //     })
-        //     .catch(err => {
-        //         console.log(err);
-        //     })
+        
     }, [])
 
     return <div className="column-item">
@@ -82,7 +67,7 @@ export const TopAnime = () => {
                     return <div className="latest-cards">
                         <figure>
                             <img src={data.image_url} alt=""/>
-                            <figcaption style={{height:"8vh"}} >{data.title}</figcaption>
+                            <figcaption style={{height:"5vh"}} >{data.title}</figcaption>
                         </figure>
                     </div>
                 })}

@@ -7,16 +7,15 @@
     flex-direction: column;
     justify-content:space-around;
     border:1px solid black;
-    padding:40px 5px 5px 5px ;
+    padding:4rem 5px 5px 5px ;
     height: 5vh;
     overflow-y:hidden;
-
     background-color:#1f1f1f;
     transition: height ease-in-out  .5s,padding-top ease-in-out .5s;
 
 }
 
-.divstyle:hover{
+.divstyle-onclick{
     padding-top: 5px;
     height: 10vw;
 }
@@ -27,6 +26,7 @@
     color: #f53636;
     font-size:2rem;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 .icon-button{
     display: none;
@@ -36,6 +36,13 @@
 
     .icon-button{
         margin-right: 50vw;
+    }
+    .divstyle{
+        padding: 40px 5px 5px 5px ;
+    }
+    .divstyle-onclick{
+        padding-top: 5px;
+        height: 30vw;
     }
 
 }

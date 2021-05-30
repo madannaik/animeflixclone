@@ -145,12 +145,12 @@ div.scroller div.card {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
 .latest-anime-div .latest-cards{
 	margin: 1vh 1vw;
 }
 .latest-anime-cards figure{
 	width: 28vh;
-	
 	border: 4px solid grey;
 
 }
@@ -264,6 +264,18 @@ div.scroller div.card {
 		flex: 0 0 auto;
 		width: 30%;
 		margin-bottom: 2rem
+	}
+	.latest-anime-cards{
+		padding: 0;
+	}
+	.latest-anime-cards figure img{
+		width: 20vh;
+		height: 300px;
+	}
+	.latest-anime-cards figure{
+		width: 20vh;
+		height: 350px;
+	
 	}
 }
 
