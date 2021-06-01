@@ -1,17 +1,12 @@
 import axios from "axios";
-export const fetchDetails = async ()=>{
-    const date = new Date();
-    const day = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
-    let url = `https://api.jikan.moe/v3/schedule/${day[date.getDay()]}`;
+export const fetchDetails = async (url)=>{
     
+        
     let datast = [];
-// Make a request for a user with a given ID
+
    await axios.get(url)
         .then(function (response) {
-            // handle success
-            
-            datast = response.data[day[date.getDay()]];
-            console.log(datast);
+            datast = response.data["top"];
         })
         .catch(function (error) {
             // handle error
@@ -22,3 +17,6 @@ export const fetchDetails = async ()=>{
         });
         return datast;
 }
+
+
+

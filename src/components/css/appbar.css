@@ -10,9 +10,9 @@
     padding:4rem 5px 5px 5px ;
     height: 5vh;
     overflow-y:hidden;
+    overflow-x: hidden;
     background-color:#1f1f1f;
     transition: height ease-in-out  .5s,padding-top ease-in-out .5s;
-
 }
 
 .divstyle-onclick{
