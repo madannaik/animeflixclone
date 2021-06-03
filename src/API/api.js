@@ -6,6 +6,7 @@ export const fetchDetails = async (url)=>{
 
    await axios.get(url)
         .then(function (response) {
+            
             datast = response.data["top"];
         })
         .catch(function (error) {

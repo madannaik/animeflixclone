@@ -1,4 +1,35 @@
 .search-body{
-    color: black;
-    margin-top: 20vh;
+    background-color: #111111;
+    min-height: 100vh;
+
+}
+
+.search-div{   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-cards{
+    margin: 1rem;
+}
+.image-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 2px solid gray;
+    color: white;
+    overflow-y: hidden;
+}
+
+.image-div img{
+    width:  180px;
+    height: 250px;
+}
+
+.image-div div{
+    width: 180px;
+    height: 250px;
+    
 }

@@ -7,8 +7,8 @@
     flex-direction: column;
     justify-content:space-around;
     border:1px solid black;
-    padding:4rem 5px 5px 5px ;
-    height: 5vh;
+    padding:3rem 5px 1px 5px ;
+    height: 1vh;
     overflow-y:hidden;
     overflow-x: hidden;
     background-color:#1f1f1f;
@@ -17,7 +17,7 @@
 
 .divstyle-onclick{
     padding-top: 5px;
-    height: 10vw;
+    height: 12vw;
 }
 .svgstyle{
     margin:5px 15px;
@@ -38,7 +38,7 @@
         margin-right: 50vw;
     }
     .divstyle{
-        padding: 40px 5px 5px 5px ;
+        padding: 50px 5px 1px 5px ;
     }
     .divstyle-onclick{
         padding-top: 5px;
