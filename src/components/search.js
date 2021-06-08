@@ -2,7 +2,7 @@ import { Box,} from '@chakra-ui/layout'
 import React from 'react'
 import "./css/search.css"
 import {useState,useEffect} from "react";
-import { typography } from '@chakra-ui/styled-system';
+
 import { useHistory } from 'react-router';
 import { Spinner } from '@chakra-ui/spinner';
 

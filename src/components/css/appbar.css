@@ -14,6 +14,13 @@
     background-color:#1f1f1f;
     transition: height ease-in-out  .5s,padding-top ease-in-out .5s;
 }
+.row-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
 
 .divstyle-onclick{
     padding-top: 5px;
@@ -25,9 +32,16 @@
 .main-header{
     color: #f53636;
     font-size:2rem;
+    margin-left: 0vw;
+    text-align: end;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
+.search-icon{
+    position: relative;
+    left: 42%;
+}
+
 .icon-button{
     display: none;
 }
@@ -43,6 +57,9 @@
     .divstyle-onclick{
         padding-top: 5px;
         height: 30vw;
+    }
+    .search-icon{
+        left: 31%;
     }
 
 }

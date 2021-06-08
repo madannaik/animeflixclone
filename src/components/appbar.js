@@ -16,10 +16,10 @@ export const Appbar = () => {
   const history = useHistory();
 
   const searchRef = createRef();
-    const onClick = ()=>{
-      const wrapper = searchRef.current;
-      wrapper.classList.toggle('divstyle-onclick');
-    }
+  const onClick = () => {
+    const wrapper = searchRef.current;
+    wrapper.classList.toggle('divstyle-onclick');
+  }
   const [isLargerThan] = useMediaQuery([
     "(max-width:700px)",
   ])
@@ -33,24 +33,29 @@ export const Appbar = () => {
     console.log(value);
   };
 
-  const redirectData = ()=>{
-    if(value !== '' && history.location.pathname !== `./search?${Input}` )
-    history.replace({
-      pathname:'/search',
-      search:value,
-    })
+  const redirectData = () => {
+    if (value !== '' && history.location.pathname !== `./search?${Input}`)
+      history.replace({
+        pathname: '/search',
+        search: value,
+      })
 
   }
 
   return <div className="divstyle" ref={searchRef} >
-    <Tooltip hasArrow label="Search anime" bg="red.600">
-    <h1 className="main-header"  onClick={onClick} >aniFLix</h1>
-    </Tooltip>
-    
+    <div className="row-item">
+    <h1 className="main-header">aniFLix</h1>
+      <Tooltip hasArrow label="Search anime" bg="red.600">
+        <Search2Icon color="white" marginTop="2.7vh" className="search-icon" onClick={onClick} />
+      </Tooltip>
+
+    </div>
+
+
     {/*<IconButton d={isLargerThan?"block":"none"}  aria-label="Search database" marginY={1} icon={<HamburgerIcon />} />*/}
     <InputGroup size="md" padding="1" marginEnd="5" >
-      <Input placeholder="Search anime" border="2px solid white" color="white"  borderRadius="1rem" value={value} onChange={handleChange} textAlign="left"/>
-      <InputRightAddon border="2px solid white" borderRadius="1rem" children={<Search2Icon/>} onClick={redirectData} backgroundColor="#f53636" color="white"/>
+      <Input placeholder="Search anime" border="2px solid white" color="white" borderRadius="1rem" value={value} onChange={handleChange} textAlign="left" />
+      <InputRightAddon border="2px solid white" borderRadius="1rem" children={<Search2Icon />} onClick={redirectData} backgroundColor="#f53636" color="white" />
     </InputGroup>
 
   </div>
